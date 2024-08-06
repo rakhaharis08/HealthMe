@@ -16,6 +16,67 @@
    <link rel="stylesheet" href="{{ asset('QuizAssets/css/animate.min.css') }}">
    <!-- Main-StyleSheet include -->
    <link rel="stylesheet" href="{{ asset('QuizAssets/css/style.css') }}">
+   <!-- Custom CSS -->
+   <style>
+       .form_items ul {
+           padding: 0;
+           margin: 0;
+           list-style: none;
+           display: flex;
+           flex-direction: column;
+       }
+
+       .form_items li {
+           margin-bottom: 15px;
+       }
+
+       .form_items label {
+           display: flex;
+           align-items: center;
+           cursor: pointer;
+           padding: 10px;
+           border-radius: 25px;
+           border: 1px solid #ddd;
+           transition: background-color 0.3s, border-color 0.3s;
+       }
+
+       .form_items label:hover {
+           background-color: #f0f0f0;
+           border-color: #ccc;
+       }
+
+       .label-pointer {
+           display: inline-block;
+           width: 30px;
+           height: 30px;
+           line-height: 30px;
+           text-align: center;
+           border-radius: 50%;
+           background-color: #eee;
+           margin-right: 10px;
+           font-size: 16px;
+           color: #333;
+       }
+
+       .label-content {
+           flex: 1;
+           text-align: left;
+       }
+
+       input[type="radio"]:checked + .label-content {
+           background-color: #007bff;
+           color: white;
+       }
+
+       .form_btn {
+           text-align: center;
+       }
+
+       .form_btn button {
+           margin: 0 10px;
+           padding: 10px 20px;
+       }
+   </style>
 </head>
 <body class="boxed-version">
 
@@ -25,232 +86,74 @@
             <h5 class="text-white text-uppercase d-inline-block">Quiz Questions and Answers</h5>
          </div>
          <div class="progress_bar steps_bar mt-3 ps-5 d-inline-block">
-            <div class="step rounded-pill d-inline-block text-center position-relative active current">1</div>
-            <div class="step rounded-pill d-inline-block text-center position-relative">2</div>
-            <div class="step rounded-pill d-inline-block text-center position-relative">3</div>
-            <div class="step rounded-pill d-inline-block text-center position-relative">4</div>
+            @for ($i = 1; $i <= count($questions); $i++)
+               <div class="step rounded-pill d-inline-block text-center position-relative {{ $i === 1 ? 'active current' : '' }}">{{ $i }}</div>
+            @endfor
          </div>
-         <form class="multisteps_form position-relative" id="wizard" method="POST" action="../mail.php">
-            <!------------------------- Step-1 ----------------------------->
-            <div class="multisteps_form_panel active" data-animation="slideVert">
-               <div class="form_content">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div class="form_title ps-5">
-                           <h1 class="text-white">Sedikit minat atau kesenangan dalam melakukan hal apapun</h1>
+         <form class="multisteps_form position-relative" id="wizard" method="POST" action="SubmitQuiz">
+            @csrf
+            @foreach ($questions as $index => $question)
+               <div class="multisteps_form_panel {{ $index === 0 ? 'active' : '' }}" data-animation="slideVert">
+                  <div class="form_content">
+                     <div class="row">
+                        <div class="col-lg-4">
+                           <div class="form_title ps-5">
+                              <h1 class="text-white">{{ $question->question }}</h1>
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-lg-4 text-center">
-                        <div class="form_img">
-                           <img src="{{ asset('QuizAssets/images/bg_1.png') }}" alt="image_not_found">
+                        <div class="col-lg-4 text-center">
+                           <div class="form_img">
+                              <img src="{{ asset('QuizAssets/images/bg_1.png') }}" alt="image_not_found">
+                           </div>
                         </div>
-                     </div>
-                     <div class="col-lg-4 text-end">
-                        <div class="form_items radio-list">
-                           <ul class="text-uppercase list-unstyled">
-                              <li>
-                                 <label for="opt_1" class="step_1 rounded-pill animate__animated animate__fadeInRight animate_25ms active">
-                                    <span class="label-pointer rounded-pill text-center">A</span>
-                                    <input type="radio" id="opt_1" name="stp_1_select_option" value="Jawaban A" checked>
-                                    <span class="label-content d-inline-block text-center rounded-pill">Jawaban A</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_2" class="step_1 rounded-pill  animate__animated animate__fadeInRight animate_50ms">
-                                    <span class="label-pointer rounded-pill text-center">B</span>
-                                    <input type="radio" id="opt_2" name="stp_1_select_option" value="Jawaban A">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Jawaban A</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_3" class="step_1 rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                                    <span class="label-pointer rounded-pill text-center">C</span>
-                                    <input type="radio" id="opt_3" name="stp_1_select_option" value="Jawaban A">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Jawaban A</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_4" class="step_1 animate__animated animate__fadeInRight animate_150ms">
-                                    <span class="label-pointer rounded-pill text-center">D</span>
-                                    <input type="radio" id="opt_4" name="stp_1_select_option" value="Jawaban A">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Jawaban A</span>
-                                 </label>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!---------- Form Button ---------->
-               <div class="form_btn py-5 d-flex justify-content-center align-items-center">
-                  <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Next Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-               </div>
-            </div>
-            <!------------------------- Step-2 ----------------------------->
-            <div class="multisteps_form_panel" data-animation="slideVert">
-               <div class="form_content">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div class="form_title ps-5">
-                           <h1 class="text-white">Which option best Describes your Job?</h1>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-center">
-                        <div class="form_img">
-                           <img src="{{ asset('QuizAssets/images/bg_2.png') }}" alt="image_not_found">
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-end">
-                        <div class="form_items radio-list">
-                           <ul class="text-uppercase list-unstyled">
-                              <li>
-                                 <label for="opt_5" class="step_2 rounded-pill animate__animated animate__fadeInRight animate_25ms">
-                                    <span class="label-pointer rounded-circle text-center">A</span>
-                                    <input type="radio" id="opt_5" class="required" name="stp_2_select_option" value="business" required>
-                                    <span class="label-content d-inline-block text-center rounded-pill">business</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_6" class="step_2 rounded-pill animate__animated animate__fadeInRight animate_50ms">
-                                    <span class="label-pointer rounded-circle text-center">B</span><input type="radio" id="opt_6" name="stp_2_select_option" value="Employee">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Employee</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_7" class="step_2 rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                                    <span class="label-pointer rounded-circle text-center">C</span><input type="radio" id="opt_7" name="stp_2_select_option" value="Journalist">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Journalist</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_8" class="step_2 animate__animated animate__fadeInRight animate_150ms">
-                                    <span class="label-pointer rounded-circle text-center">D</span><input type="radio" id="opt_8" name="stp_2_select_option" value="Other">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Other</span>
-                                 </label>
-                              </li>
-                           </ul>
+                        <div class="col-lg-4 text-end">
+                           <div class="form_items radio-list">
+                              <ul class="text-uppercase list-unstyled">
+                                 <li>
+                                    <label for="opt_1_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_25ms">
+                                       <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">A</div></span></div>
+                                       <input type="radio" class="required" id="opt_1_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="0">
+                                       <span class="label-content d-inline-block text-center rounded-pill">Not at all</span>
+                                    </label>
+                                 </li>
+                                 <li>
+                                    <label for="opt_2_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_50ms">
+                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">B</div></span></div>
+                                       <input type="radio" id="opt_2_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="1">
+                                       <span class="label-content d-inline-block text-center rounded-pill">Several days</span>
+                                    </label>
+                                 </li>
+                                 <li>
+                                    <label for="opt_3_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_100ms">
+                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">C</div></span></div>
+                                       <input type="radio" id="opt_3_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="2">
+                                       <span class="label-content d-inline-block text-center rounded-pill">More than half the days</span>
+                                    </label>
+                                 </li>
+                                 <li>
+                                    <label for="opt_4_{{ $index }}" class="step_{{ $index + 1 }} animate__animated animate__fadeInRight animate_150ms">
+                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">D</div></span></div>
+                                       <input type="radio" id="opt_4_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="3">
+                                       <span class="label-content d-inline-block text-center rounded-pill">Nearly every day</span>
+                                    </label>
+                                 </li>
+                              </ul>
+                           </div>
                         </div>
                      </div>
                   </div>
-               </div>
-               <!---------- Form Button ---------->
-               <div class="form_btn py-5 d-flex justify-content-center align-items-center">
-                  <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn"> Previous Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-                  <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Next Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-               </div>
-            </div>
-            <!------------------------- Step-3 ----------------------------->
-            <div class="multisteps_form_panel" data-animation="slideVert">
-               <div class="form_content">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div class="form_title ps-5">
-                           <h1 class="text-white">In Your Childhood What is Your Favorite Chocolate</h1>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-center">
-                        <div class="form_img">
-                           <img src="{{ asset('QuizAssets/images/bg_3.png') }}" alt="image_not_found">
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-end">
-                        <div class="form_items radio-list">
-                           <ul class="text-uppercase list-unstyled">
-                              <li>
-                                 <label for="opt_9" class="step_3 rounded-pill animate__animated animate__fadeInRight animate_25ms">
-                                    <span class="label-pointer rounded-circle text-center">A</span>
-                                    <input type="radio" id="opt_9" class="required" name="stp_3_select_option" value="Diary Milk" required>
-                                    <span class="label-content d-inline-block text-center rounded-pill">Diary Milk</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_10" class="step_3 rounded-pill animate__animated animate__fadeInRight animate_50ms">
-                                    <span class="label-pointer rounded-circle text-center">B</span>
-                                    <input type="radio" id="opt_10" name="stp_3_select_option" value="Kit Kat">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Kit Kat</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_11" class="step_3 rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                                    <span class="label-pointer rounded-circle text-center">C</span>
-                                    <input type="radio" id="opt_11" name="stp_3_select_option" value="LuvIt">
-                                    <span class="label-content d-inline-block text-center rounded-pill">LuvIt</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_12" class="step_3 animate__animated animate__fadeInRight animate_150ms">
-                                    <span class="label-pointer rounded-circle text-center">D</span>
-                                    <input type="radio" id="opt_12" name="stp_3_select_option" value="Other">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Other</span>
-                                 </label>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
+                  <div class="form_btn py-5 d-flex justify-content-center align-items-center">
+                     @if ($index > 0)
+                        <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn"> Previous Question <span><i class="fas fa-arrow-left ps-1"></i></span></button>
+                     @endif
+                     @if ($index < count($questions) - 1)
+                        <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Next Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
+                     @else
+                        <button type="submit" class="f_btn rounded-pill active text-uppercase" id="submitBtn"> Submit <span><i class="fas fa-arrow-right ps-1"></i></span></button>
+                     @endif
                   </div>
                </div>
-               <!---------- Form Button ---------->
-               <div class="form_btn py-5 d-flex justify-content-center align-items-center">
-                  <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn"> Previous Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-                  <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Next Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-               </div>
-            </div>
-            <!------------------------- Step-4 ----------------------------->
-            <div class="multisteps_form_panel" data-animation="slideVert">
-               <div class="form_content">
-                  <div class="row">
-                     <div class="col-lg-4">
-                        <div class="form_title ps-5">
-                           <h1 class="text-white">What is Your Favorite Place</h1>
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-center">
-                        <div class="form_img">
-                           <img src="{{ asset('QuizAssets/images/bg_4.png') }}" alt="image_not_found">
-                        </div>
-                     </div>
-                     <div class="col-lg-4 text-end">
-                        <div class="form_items radio-list">
-                           <ul class="text-uppercase list-unstyled">
-                              <li>
-                                 <label for="opt_13" class="step_4 rounded-pill animate__animated animate__fadeInRight animate_25ms">
-                                    <span class="label-pointer rounded-circle text-center">A</span>
-                                    <input type="radio" id="opt_13" class="required" name="stp_4_select_option" value="Ladakh" required>
-                                    <span class="label-content d-inline-block text-center rounded-pill">Ladakh</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_14" class="step_4 rounded-pill animate__animated animate__fadeInRight animate_50ms">
-                                    <span class="label-pointer rounded-circle text-center">B</span>
-                                    <input type="radio" id="opt_14" name="stp_4_select_option" value="Goa">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Goa</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_15" class="step_4 rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                                    <span class="label-pointer rounded-circle text-center">C</span>
-                                    <input type="radio" id="opt_15" name="stp_4_select_option" value="Kerala">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Kerala</span>
-                                 </label>
-                              </li>
-                              <li>
-                                 <label for="opt_16" class="step_4 animate__animated animate__fadeInRight animate_150ms">
-                                    <span class="label-pointer rounded-circle text-center">D</span>
-                                    <input type="radio" id="opt_16" name="stp_4_select_option" value="Other">
-                                    <span class="label-content d-inline-block text-center rounded-pill">Other</span>
-                                 </label>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!---------- Form Button ---------->
-               <div class="form_btn py-5 d-flex justify-content-center align-items-center">
-                  <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn"> Previous Question <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-                  <button type="submit" class="f_btn rounded-pill active text-uppercase" id="submitBtn"> Submit <span><i class="fas fa-arrow-right ps-1"></i></span></button>
-               </div>
-            </div>
+            @endforeach
          </form>
       </div>
    </div>

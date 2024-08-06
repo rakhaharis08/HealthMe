@@ -47,18 +47,6 @@
                         <li class="nav-item active">
                             <a class="nav-link p-0" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="about-us.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="doctors.html">Doctors</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link p-0" href="contact.html">Contact Us</a>
-                        </li>
                     </ul>
                     <div class="header-contact d-flex align-items-center">
                         <div class="search-field">
@@ -137,95 +125,61 @@
         </div>
     </section>
     <!-- BANNER SECTION -->
-    <!-- SERVICE SECTION -->
-    <section class="w-100 float-left service-con padding-top padding-bottom">
-        <div class="container">
-            <div class="service-box">
-                <div class="service-box-content" data-aos="fade-up" data-aos-duration="700">
-                    <span class="d-block sub-txt">What We Provide</span>
-                    <h2>Our
-                        Medical
-                        Services</h2>
-                    <p class="mb-0">Molestiae non recusandae
-                        earum rerum hic tenetur asa
-                        piente delectus.</p>
-                </div>
-                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                    <figure>
-                        <img src="assets/images/cardiologist-icon.png" alt="cardiologist-icon">
-                    </figure>
-                    <h4>Cardiologist</h4>
-                    <p>Duis aute irure dolor in
-                        reprehenderit in voluta
-                        zesse cillum...</p>
-                    <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                    <figure>
-                        <img src="assets/images/pulmonary-icon.png" alt="pulmonary-icon">
-                    </figure>
-                    <h4>Pulmonary</h4>
-                    <p>Guis aute irure dolor in
-                        reprehenderit in voluta
-                        zesse cillum...</p>
-                    <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                    <figure>
-                        <img src="assets/images/gynecology-icon.png" alt="gynecology-icon">
-                    </figure>
-                    <h4>Gynecology</h4>
-                    <p>Nuis aute irure dolor in
-                        reprehenderit in voluta
-                        zesse cillum...</p>
-                    <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                    <figure>
-                        <img src="assets/images/pphthalmology-icon.png" alt="pphthalmology-icon">
-                    </figure>
-                    <h4>Ophthalmology</h4>
-                    <p>Euis aute irure dolor in
-                        reprehenderit in voluta
-                        zesse cillum...</p>
-                    <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                    <figure>
-                        <img src="assets/images/psychiatry-icon.png" alt="psychiatry-icon">
-                    </figure>
-                    <h4>Psychiatry</h4>
-                    <p>Quis aute irure dolor in
-                        reprehenderit in voluta
-                        zesse cillum...</p>
-                    <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-                </div>
-                <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
-                    <div class="service-provide-title">
-                        <h3>We Provide
-                            Best Medical
-                            Treatment.</h3>
-                        <p>Reprehenderit in
-                            voluta zesse.</p>
-                        <div class="provide-btn d-flex align-items-center">
-                            <a href="#">Book Appointment</a>
-                            <a href="#" class="provide-arrow">
-                                <figure class="mb-0 d-flex align-items-center justify-content-center">
-                                    <img src="assets/images/samll-arrow.png" alt="top-arrow">
-                                </figure>
-                            </a>
-                        </div>
+     <!-- SERVICE SECTION -->
+<section class="w-100 float-left service-con padding-top padding-bottom">
+    <div class="container">
+        <div class="service-box">
+            <div class="service-box-content" data-aos="fade-up" data-aos-duration="700">
+                <span class="d-block sub-txt">What We Offer</span>
+                <h2>Our Mental Health Services</h2>
+                <p class="mb-0">Providing comprehensive support for mental well-being with compassionate care.</p>
+            </div>
+            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                <h4>Counseling</h4>
+                <p>Personalized counseling sessions to help you navigate life's challenges and improve mental health.</p>
+                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                <h4>Therapy</h4>
+                <p>Individual and group therapy options to support mental health recovery and emotional resilience.</p>
+                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                <h4>Support Groups</h4>
+                <p>Join support groups to connect with others and share experiences in a safe and nurturing environment.</p>
+                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                <h4>Mental Health Assessments</h4>
+                <p>Comprehensive assessments to understand your mental health needs and tailor the best treatment plan.</p>
+                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                <h4>Medication Management</h4>
+                <p>Expert management of medication to assist in the treatment of mental health disorders and enhance well-being.</p>
+                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
+            </div>
+            <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
+                <div class="service-provide-title">
+                    <h3>Expert Care for Your Mental Health</h3>
+                    <p>Compassionate professionals dedicated to your mental wellness.</p>
+                    <div class="provide-btn d-flex align-items-center">
+                        <a href="#">Take a Test</a>
+                        <a href="#" class="provide-arrow">
+                        </a>
                     </div>
-                    <div class="service-provide-img">
-                        <figure class="mb-0">
-                            <img src="assets/images/treatment-img.jpg" alt="treatment-img">
-                        </figure>
-                    </div>
+                </div>
+                <div class="service-provide-img">
+                    <figure class="mb-0">
+                        <img src="https://calmerry.com/wp-content/uploads/2022/06/Mental-Health-Tests-1-1024x410.png" alt="mental-health-treatment">
+                    </figure>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- SERVICE SECTION -->
+    </div>
+</section>
+<!-- SERVICE SECTION -->
+
      
     <!-- CONTACT SECTION -->
     <section class="w-100 float-left contact-con position-relative">
@@ -234,28 +188,11 @@
                 <div class="container">
                     <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
                         <span class="sub-txt d-block">Test Your Mental Health Now</span>
-                        <h2>Register To Take a Test Now</h2>
-                        <form class="form-box" method="post" id="contactpage">
-                            <ul class="list-unstyled" data-aos="fade-up" data-aos-duration="700">
-                                <li>
-                                    <input type="text" name="fname" id="fname" placeholder="Your Name:">
-                                </li>
-                                <li>
-                                    <input type="tel" name="phone" id="phone" placeholder="Phone No:">
-                                </li>
-                                <li>
-                                    <input type="email" placeholder="Your Email:" name="email" id="email">
-                                </li>
-                                <li>
-                                    <input placeholder="Date:" type="text" onfocus="(this.type = 'date')" id="date">
-                                </li>
-                                <li>
-                                    <input type="password" placeholder="Password:" name="password" id="password">
-                                </li>
-                            </ul>
+                        <h2>Take a Test Now</h2>
+                        <form class="form-box" method="get" action="quiz">
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
                                 <button type="submit" id="submit">
-                                    Register Your Account
+                                    Take a Test
                                     <figure class="mb-0">
                                         <img src="assets/images/top-arrow.png" alt="top-arrow">
                                     </figure>
@@ -267,65 +204,6 @@
             </div>
         </div>
     </section>
-    <!-- CONTACT SECTION -->
-    <!-- PROCESS SECTION -->
-    <section class="work-process-sec w-100 float-left padding-bottom padding-top">
-        <div class="container">
-            <div class="generic-title text-center" data-aos="fade-up" data-aos-duration="700">
-                <span class="d-block sub-txt">WORK PROCESS</span>
-                <h2 class="mb-0">Let’s See How We Work</h2>
-            </div>
-            <div class="process-con">
-                <ul class="list-unstyled mb-0">
-                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
-                        <div class="process-img-box">
-                            <figure>
-                                <img src="assets/images/process-img1.png" alt="process-img1">
-                            </figure>
-                            <span>01</span>
-                        </div>
-                        <h4>Seeing Patients</h4>
-                        <p>Rure dolor aen voluta <br>
-                            zesse cillum...</p>
-                    </li>
-                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
-                        <div class="process-img-box">
-                            <figure>
-                                <img src="assets/images/process-img2.png" alt="process-img2">
-                            </figure>
-                            <span>02</span>
-                        </div>
-                        <h4>Making a Diagnosis</h4>
-                        <p>Gure dolor aen voluta <br>
-                            zesse cillum...</p>
-                    </li>
-                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
-                        <div class="process-img-box">
-                            <figure>
-                                <img src="assets/images/process-img3.png" alt="process-img3">
-                            </figure>
-                            <span>03</span>
-                        </div>
-                        <h4>Developing a Treatment</h4>
-                        <p>Hure dolor aen voluta <br>
-                            zesse cillum...</p>
-                    </li>
-                    <li class="text-center" data-aos="fade-up" data-aos-duration="700">
-                        <div class="process-img-box">
-                            <figure>
-                                <img src="assets/images/process-img4.png" alt="process-img4">
-                            </figure>
-                            <span>04</span>
-                        </div>
-                        <h4>Documenting Patient</h4>
-                        <p>Zure dolor aen voluta <br>
-                            zesse cillum...</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!-- PROCESS SECTION -->
 
     <!-- PATIENTS REVIEWS SECTION -->
     <section class="patients-reviews-sec w-100 float-left padding-top padding-bottom">
