@@ -71,12 +71,11 @@
             <div class="banner-inner-box position-relative">
                 <div class="banner-inner-con">
                     <div class="banner-title">
-                        <h1 data-aos="fade-up" data-aos-duration="700">Mental Health
-                            Solutions.</h1>
-                        <p data-aos="fade-up" data-aos-duration="700">Caring is our calling. Changing Health Care for
-                            Good.</p>
+                        <h1 data-aos="fade-up" data-aos-duration="700">Solusi Kesehatan Mental.</h1>
+                        <p data-aos="fade-up" data-aos-duration="700">Peduli adalah panggilan kami. Mengubah Perawatan Kesehatan untuk
+                            Selamanya.</p>
                         <div class="banner-btn d-flex align-items-center" data-aos="fade-up" data-aos-duration="700">
-                            <a href="#">Test Your Mental Health</a>
+                            <a href="#">Uji Kesehatan Mental Anda</a>
                             <a href="#">
                                 <figure class="mb-0 d-flex align-items-center justify-content-center">
                                     <img src="assets/images/top-arrow.png" alt="top-arrow">
@@ -89,9 +88,9 @@
                             <img src="assets/images/doctor-img.png" alt="doctor-img">
                         </figure>
                         <div class="banner-details-txt">
-                            <p data-aos="fade-up" data-aos-duration="700">Caring about mental health means keeping
-                                            our minds healthy and strong, which ultimately has
-                                            a positive impact on our survival and happiness.</p>
+                            <p data-aos="fade-up" data-aos-duration="700">Peduli tentang kesehatan mental berarti menjaga
+                                            pikiran kita tetap sehat dan kuat, yang pada akhirnya berdampak positif
+                                            pada kelangsungan hidup dan kebahagiaan kita.</p>
                             <div class="banner-static-box">
                                 <ul class="mb-0 list-unstyled">
                                     <li class="d-flex align-items-center justify-content-center" data-aos="fade-up"
@@ -101,8 +100,8 @@
                                         </figure>
                                         <div class="banner-static-txt">
                                             <div class="static-value">98%</div>
-                                            <span class="d-block">Positive Reviews</span>
-                                            <span class="d-block">From Our Clients</span>
+                                            <span class="d-block">Ulasan Positif</span>
+                                            <span class="d-block">Dari Klien Kami</span>
                                         </div>
                                     </li>
                                     <li class="d-flex align-items-center justify-content-end" data-aos="fade-up"
@@ -112,8 +111,8 @@
                                         </figure>
                                         <div class="banner-static-txt">
                                             <div class="static-value">38+</div>
-                                            <span class="d-block">Experienced Doctors</span>
-                                            <span class="d-block">Our Treatment Office</span>
+                                            <span class="d-block">Dokter Berpengalaman</span>
+                                            <span class="d-block">Kantor Pengobatan Kami</span>
                                         </div>
                                     </li>
                                 </ul>
@@ -124,75 +123,71 @@
             </div>
         </div>
     </section>
-    <!-- BANNER SECTION -->
-     <!-- SERVICE SECTION -->
-<section class="w-100 float-left service-con padding-top padding-bottom">
-    <div class="container">
-        <div class="service-box">
-            <div class="service-box-content" data-aos="fade-up" data-aos-duration="700">
-                <span class="d-block sub-txt">What We Offer</span>
-                <h2>Our Mental Health Services</h2>
-                <p class="mb-0">Providing comprehensive support for mental well-being with compassionate care.</p>
-            </div>
-            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                <h4>Counseling</h4>
-                <p>Personalized counseling sessions to help you navigate life's challenges and improve mental health.</p>
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                <h4>Therapy</h4>
-                <p>Individual and group therapy options to support mental health recovery and emotional resilience.</p>
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                <h4>Support Groups</h4>
-                <p>Join support groups to connect with others and share experiences in a safe and nurturing environment.</p>
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                <h4>Mental Health Assessments</h4>
-                <p>Comprehensive assessments to understand your mental health needs and tailor the best treatment plan.</p>
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
-                <h4>Medication Management</h4>
-                <p>Expert management of medication to assist in the treatment of mental health disorders and enhance well-being.</p>
-                <a href="#">Read More <i class="fas fa-angle-right"></i></a>
-            </div>
-            <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
-                <div class="service-provide-title">
-                    <h3>Expert Care for Your Mental Health</h3>
-                    <p>Compassionate professionals dedicated to your mental wellness.</p>
-                    <div class="provide-btn d-flex align-items-center">
-                        <a href="#">Take a Test</a>
-                        <a href="#" class="provide-arrow">
-                        </a>
-                    </div>
+
+
+    <section class="w-100 float-left service-con padding-top padding-bottom">
+        <div class="container">
+            <div class="service-box">
+                <div class="service-box-content" data-aos="fade-up" data-aos-duration="700">
+                    <span class="d-block sub-txt">Apa yang Kami Tawarkan</span>
+                    <h2>Layanan Kesehatan Mental Kami</h2>
+                    <p class="mb-0">Memberikan dukungan komprehensif untuk kesejahteraan mental dengan perawatan yang penuh empati.</p>
                 </div>
-                <div class="service-provide-img">
-                    <figure class="mb-0">
-                        <img src="https://calmerry.com/wp-content/uploads/2022/06/Mental-Health-Tests-1-1024x410.png" alt="mental-health-treatment">
-                    </figure>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <h4>Konseling</h4>
+                    <p>Sesi konseling yang dipersonalisasi untuk membantu Anda menghadapi tantangan hidup dan meningkatkan kesehatan mental.</p>
+                    <a href="#">Baca Selengkapnya <i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <h4>Terapi</h4>
+                    <p>Opsi terapi individu dan kelompok untuk mendukung pemulihan kesehatan mental dan ketahanan emosional.</p>
+                    <a href="#">Baca Selengkapnya <i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <h4>Kelompok Dukungan</h4>
+                    <p>Bergabunglah dengan kelompok dukungan untuk terhubung dengan orang lain dan berbagi pengalaman dalam lingkungan yang aman dan mendukung.</p>
+                    <a href="#">Baca Selengkapnya <i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <h4>Penilaian Kesehatan Mental</h4>
+                    <p>Penilaian komprehensif untuk memahami kebutuhan kesehatan mental Anda dan menyesuaikan rencana perawatan terbaik.</p>
+                    <a href="#">Baca Selengkapnya <i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-box-item" data-aos="fade-up" data-aos-duration="700">
+                    <h4>Manajemen Obat</h4>
+                    <p>Manajemen obat yang ahli untuk membantu dalam pengobatan gangguan kesehatan mental dan meningkatkan kesejahteraan.</p>
+                    <a href="#">Baca Selengkapnya <i class="fas fa-angle-right"></i></a>
+                </div>
+                <div class="service-provide-box" data-aos="fade-up" data-aos-duration="700">
+                    <div class="service-provide-title">
+                        <h3>Perawatan Ahli untuk Kesehatan Mental Anda</h3>
+                        <p>Profesional penuh empati yang berdedikasi untuk kesejahteraan mental Anda.</p>
+                        <div class="provide-btn d-flex align-items-center">
+                            <a href="#">Ikuti Tes</a>
+                            <a href="#" class="provide-arrow"></a>
+                        </div>
+                    </div>
+                    <div class="service-provide-img">
+                        <figure class="mb-0">
+                            <img src="https://calmerry.com/wp-content/uploads/2022/06/Mental-Health-Tests-1-1024x410.png" alt="perawatan-kesehatan-mental">
+                        </figure>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- SERVICE SECTION -->
+    </section>
 
-     
-    <!-- CONTACT SECTION -->
     <section class="w-100 float-left contact-con position-relative">
         <div class="dots-img position-relative">
             <div class="padding-top padding-bottom contact-inner-con position-relative">
                 <div class="container">
                     <div class="contact-form" data-aos="fade-up" data-aos-duration="700">
-                        <span class="sub-txt d-block">Test Your Mental Health Now</span>
-                        <h2>Take a Test Now</h2>
+                        <span class="sub-txt d-block">Uji Kesehatan Mental Anda Sekarang</span>
+                        <h2>Ikuti Tes Sekarang</h2>
                         <form class="form-box" method="get" action="quiz">
                             <div class="submit-btn" data-aos="fade-up" data-aos-duration="700">
                                 <button type="submit" id="submit">
-                                    Take a Test
+                                    Ikuti Tes
                                     <figure class="mb-0">
                                         <img src="assets/images/top-arrow.png" alt="top-arrow">
                                     </figure>
@@ -205,12 +200,12 @@
         </div>
     </section>
 
-    <!-- PATIENTS REVIEWS SECTION -->
+
     <section class="patients-reviews-sec w-100 float-left padding-top padding-bottom">
         <div class="container">
             <div class="generic-title text-center" data-aos="fade-up" data-aos-duration="700">
-                <span class="d-block sub-txt">OUR TESTIMONIALS</span>
-                <h2 class="mb-0">What Patients are Saying!</h2>
+                <span class="d-block sub-txt">TESTIMONIAL KAMI</span>
+                <h2 class="mb-0">Apa Kata Pasien Kami!</h2>
             </div>
             <div id="owl-carouselone" class="owl-carousel owl-theme" data-aos="fade-up" data-aos-duration="700">
                 <div class="item">
@@ -218,10 +213,7 @@
                         <figure>
                             <img src="assets/images/quote-img.png" alt="quote-img">
                         </figure>
-                        <p>Quisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
+                        <p>Sangat membantu! Terapi yang saya terima di sini sangat bermanfaat dan memberikan perubahan positif dalam hidup saya. Staf yang peduli dan profesional.</p>
                         <div class="patient-details d-flex">
                             <div class="patient-img">
                                 <figure class="mb-0">
@@ -233,7 +225,7 @@
                                     <img src="assets/images/rating-stars.png" alt="rating-stars">
                                 </figure>
                                 <h5>Kevin Andrew</h5>
-                                <span class="d-block">Happy Client</span>
+                                <span class="d-block">Klien Puas</span>
                             </div>
                         </div>
                     </div>
@@ -243,10 +235,7 @@
                         <figure>
                             <img src="assets/images/quote-img.png" alt="quote-img">
                         </figure>
-                        <p>Ruisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
+                        <p>Pengalaman yang luar biasa! Terapi grup sangat membantu saya merasa lebih terhubung dan memahami diri sendiri dengan lebih baik. Terima kasih atas dukungannya.</p>
                         <div class="patient-details d-flex">
                             <div class="patient-img">
                                 <figure class="mb-0">
@@ -258,7 +247,7 @@
                                     <img src="assets/images/rating-stars.png" alt="rating-stars">
                                 </figure>
                                 <h5>Peri James</h5>
-                                <span class="d-block">Happy Client</span>
+                                <span class="d-block">Klien Puas</span>
                             </div>
                         </div>
                     </div>
@@ -268,10 +257,7 @@
                         <figure>
                             <img src="assets/images/quote-img.png" alt="quote-img">
                         </figure>
-                        <p>Nuisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
+                        <p>Konseling yang sangat membantu dan mendalam. Saya merasa didukung dan dipahami sepanjang perjalanan perawatan saya di sini.</p>
                         <div class="patient-details d-flex">
                             <div class="patient-img">
                                 <figure class="mb-0">
@@ -283,165 +269,17 @@
                                     <img src="assets/images/rating-stars.png" alt="rating-stars">
                                 </figure>
                                 <h5>Naurth Reough</h5>
-                                <span class="d-block">Happy Client</span>
+                                <span class="d-block">Klien Puas</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Quisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img1.png" alt="patient-img1">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Kevin Andrew</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Ruisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img2.png" alt="patient-img2">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Peri James</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Nuisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img3.png" alt="patient-img3">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Naurth Reough</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Quisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img1.png" alt="patient-img1">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Kevin Andrew</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Ruisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img2.png" alt="patient-img2">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Peri James</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="review-box">
-                        <figure>
-                            <img src="assets/images/quote-img.png" alt="quote-img">
-                        </figure>
-                        <p>Nuisuam est rui dolorem ipsum rui
-                            dolor sit amet, consectetur, adipise
-                            velit sed quia non numquam eiusm
-                            tempora incidunt ut labore</p>
-                        <div class="patient-details d-flex">
-                            <div class="patient-img">
-                                <figure class="mb-0">
-                                    <img src="assets/images/patient-img3.png" alt="patient-img3">
-                                </figure>
-                            </div>
-                            <div class="patient-rating">
-                                <figure>
-                                    <img src="assets/images/rating-stars.png" alt="rating-stars">
-                                </figure>
-                                <h5>Naurth Reough</h5>
-                                <span class="d-block">Happy Client</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Add more review items as needed -->
             </div>
         </div>
     </section>
-    <!-- PATIENTS REVIEWS SECTION -->
+
+    
      <br>
     <div class="copyright-con w-100 float-left text-center">
         <p class="mb-0">Copyright © 2023 HealthMe All rights reserved.</p>
