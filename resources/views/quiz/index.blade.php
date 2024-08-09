@@ -87,7 +87,7 @@
          </div>
          <div class="progress_bar steps_bar mt-3 ps-5 d-inline-block">
             @for ($i = 1; $i <= count($questions); $i++)
-               <div class="step rounded-pill d-inline-block text-center position-relative {{ $i === 1 ? 'active current' : '' }}">{{ $i }}</div>
+               <div style="background-color:#d8ecfc;color:black;" class="step rounded-pill d-inline-block text-center position-relative {{ $i === 1 ? 'active current' : '' }}">{{ $i }}</div>
             @endfor
          </div>
          <form class="multisteps_form position-relative" id="wizard" method="POST" action="SubmitQuiz">
@@ -110,31 +110,27 @@
                            <div class="form_items radio-list">
                               <ul class="text-uppercase list-unstyled">
                                  <li>
-                                    <label for="opt_1_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_25ms">
-                                       <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">A</div></span></div>
+                                    <label for="opt_1_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_25ms" style="background-color:#08344c;color:white;">
                                        <input type="radio" class="required" id="opt_1_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="0">
-                                       <span class="label-content d-inline-block text-center rounded-pill">Tidak sama sekali</span>
+                                       <span class="label-content d-inline-block text-center rounded-pill" style="background-color:#08344c;">Tidak sama sekali</span>
                                     </label>
                                  </li>
                                  <li>
-                                    <label for="opt_2_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_50ms">
-                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">B</div></span></div>
+                                    <label for="opt_2_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_50ms" style="background-color:#08344c;color:white;">
                                        <input type="radio" id="opt_2_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="1">
-                                       <span class="label-content d-inline-block text-center rounded-pill">Beberapa hari</span>
+                                       <span class="label-content d-inline-block text-center rounded-pill"  style="background-color:#08344c;">Beberapa hari</span>
                                     </label>
                                  </li>
                                  <li>
-                                    <label for="opt_3_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_100ms">
-                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">C</div></span></div>
+                                    <label for="opt_3_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_100ms" style="background-color:#08344c;color:white;">
                                        <input type="radio" id="opt_3_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="2">
-                                       <span class="label-content d-inline-block text-center rounded-pill">Lebih dari setengah hari</span>
+                                       <span class="label-content d-inline-block text-center rounded-pill"  style="background-color:#08344c;">Lebih dari setengah hari</span>
                                     </label>
                                  </li>
                                  <li>
-                                    <label for="opt_4_{{ $index }}" class="step_{{ $index + 1 }} animate__animated animate__fadeInRight animate_150ms">
-                                    <div style="margin-top:-15px;"><span class="label-pointer rounded-pill text-center"><div style="margin-top:-15px;margin-left:-5px;">D</div></span></div>
+                                 <label for="opt_4_{{ $index }}" class="step_{{ $index + 1 }} rounded-pill animate__animated animate__fadeInRight animate_100ms" style="background-color:#08344c;color:white;">
                                        <input type="radio" id="opt_4_{{ $index }}" name="stp_{{ $index + 1 }}_select_option" value="3">
-                                       <span class="label-content d-inline-block text-center rounded-pill">Hampir setiap hari</span>
+                                       <span class="label-content d-inline-block text-center rounded-pill"  style="background-color:#08344c;">Hampir setiap hari</span>
                                     </label>
                                  </li>
                               </ul>
@@ -144,7 +140,7 @@
                   </div>
                   <div class="form_btn py-5 d-flex justify-content-center align-items-center">
                      @if ($index > 0)
-                        <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn"> Pertanyaan Sebelumnya <span><i class="fas fa-arrow-left ps-1"></i></span></button>
+                        <button type="button" class="js-btn-prev f_btn rounded-pill text-uppercase" id="prevBtn" style="color:black;"> Pertanyaan Sebelumnya <span><i class="fas fa-arrow-left ps-1"></i></span></button>
                      @endif
                      @if ($index < count($questions) - 1)
                         <button type="button" class="js-btn-next f_btn rounded-pill active text-uppercase" id="nextBtn"> Pertanyaan Berikutnya <span><i class="fas fa-arrow-right ps-1"></i></span></button>
